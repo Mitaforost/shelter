@@ -1,1 +1,1 @@
-# [HTML](https://mitaforost.github.io/shelter/)
+# [HTML](https://mitaforost.github.io/shelter/publish)
