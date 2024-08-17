@@ -1,52 +1,8 @@
 <!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="description" content="description">
-    <link rel="icon" href="img/icon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/icon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="img/icon/android-chrome-512x512.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Cozy House</title>
-</head>
-
+<html lang="en">
+@@include('html/head.html')
 <body class="pets">
-<header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <a href="./index.html" class="header__logo">
-                <h1 class="header__title">
-                    Cozy House
-                </h1>
-                <p class="header__subtitle">
-                    Shelter for pets in Boston
-                </p>
-            </a>
-            <ul class="header__list">
-                <li class="header__item"><a href="./index.html" class="header__link p">About the shelter</a></li>
-                <li class="header__item"><a href="./pets.html" class="header__link p active">Our pets</a></li>
-                <li class="header__item"><a href="#" class="header__link p">Help the shelter</a></li>
-                <li class="header__item"><a href="#footer" class="header__link p">Contacts</a></li>
-            </ul>
-            <div class="header__mobile header-mobile">
-                <button class="header-mobile__button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="header-mobile__list">
-                    <li class="header__item"><a href="./index.html" class="header__link p">About the shelter</a></li>
-                    <li class="header__item"><a href="./pets.html" class="header__link p active">Our pets</a></li>
-                    <li class="header__item"><a href="#" class="header__link p">Help the shelter</a></li>
-                    <li class="header__item"><a href="#footer" class="header__link p">Contacts</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
+@@include('html/header.html')
 <main>
     <section class="friends">
         <div class="container">
@@ -109,55 +65,7 @@
         </div>
     </section>
 </main>
-<footer class="footer" id="footer">
-    <div class="container">
-        <div class="footer__wrapper">
-            <div class="footer__info-block">
-                <h3 class="footer__title">For questions and suggestions</h3>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="mailto:email@shelter.com" class="footer__link">
-                            <svg viewBox="0 0 40 26" width="40" height="26" xmlns="http://www.w3.org/2000/svg">
-                                <use href="img/sprite.svg#mail"/>
-                            </svg>
-                            email@shelter.com
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="tel:+136745677554" class="footer__link">
-                            <svg viewBox="0 0 40 32" width="40" height="32" xmlns="http://www.w3.org/2000/svg">
-                                <use href="img/sprite.svg#phone"/>
-                            </svg>
-                            +13 674 567 75 54
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__info-block">
-                <h3 class="footer__title">We are waiting for your visit</h3>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="https://yandex.by/maps/-/CDSGRXmY" class="footer__link" target="_blank">
-                            <svg viewBox="0 0 22 32" width="22" height="32" xmlns="http://www.w3.org/2000/svg">
-                                <use href="img/sprite.svg#pin"/>
-                            </svg>
-                            1 Central Street, Boston (entrance from the store)
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="https://yandex.by/maps/-/CDSGVAZe" class="footer__link" target="_blank">
-                            <svg viewBox="0 0 22 32" width="22" height="32" xmlns="http://www.w3.org/2000/svg">
-                                <use href="img/sprite.svg#pin"/>
-                            </svg>
-                            18 South Park, London
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <img src="img/png/footer-puppy.png" class="footer__photo" alt="puppy">
-        </div>
-    </div>
-</footer>
+@@include('html/footer.html')
 <div id="popup" class="popup">
     <div class="popup__content">
         <button class="popup__close">
